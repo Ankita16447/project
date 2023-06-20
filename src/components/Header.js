@@ -20,22 +20,22 @@ const Header = () => {
                     Home
                 </li>
 
-                <li className="text-base text-black  hover:text-orange-900 hover:underline
+                <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                     Pages
                 </li>
 
-                <li className="text-base text-black hover:text-orange-900 hover:underline
+                <li className="text-base text-black hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                     Shop
                 </li>
 
-                <li className="text-base text-black  hover:text-orange-900 hover:underline
+                <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                     Elements
                 </li>
 
-                <li className="text-base text-black  hover:text-orange-900 hover:underline
+                <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
                     Blog
                 </li>
