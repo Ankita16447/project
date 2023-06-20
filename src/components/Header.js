@@ -4,8 +4,8 @@ import {cart_logo} from "../assets/index"
 import {user_logo} from "../assets/index"
 
 
-
-const Header = () => {
+const Header = () => 
+{
   return (
   <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont">
 
