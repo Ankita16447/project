@@ -6,7 +6,7 @@ module.exports = {
       fontFamily:{
         bodyFont:"Poppins",
         titleFont:"Nunito Sans",
-      }
+      },
     },
   },
   plugins: [],
