@@ -1,18 +1,14 @@
 import React from 'react'
 import {left_logo , paymentlogo} from "../assets/index";
 import {ImGithub} from "react-icons/im"
-import {
-    FaFacebookF,
-    FaTwitter , 
-    FaInstagram , 
-    FaYoutube , 
-    FaHome , 
-} from "react-icons/fa" ; 
+import {FaFacebookF,FaTwitter , FaInstagram , FaYoutube , FaHome , } from "react-icons/fa" ; 
 import { MdLocationOn} from "react-icons/md" ; 
 import { BsPersonFill , BsPaypal} from "react-icons/bs" ; 
+
+
 const Footer = () => {
   return (
-    <div className ="bg-black text-[949494] py-20 font-title">
+    <div className ="bg-black text-[949494] py-20 font-titleFont">
       <div className ="max-w-screen-xl mx-auto grid grid-cols-4">
        <div>
        <img className="w-30 h-12 px-12 " src={left_logo} alt="logo"/>
@@ -45,10 +41,10 @@ const Footer = () => {
         </div>
         
        </div> 
-       {/* <div className="flex flex-col justify-center px-2">
+       <div className="flex flex-col justify-center px-2">
         <input className = "bg-transparent border px-4 py-2 text-sm"  placeholder="email"   type="text"></input> 
         <button className=" text-sm-border text-white border-t-0 hover:bg-gray-900 active:bg-white active:text-black"> Subscribe </button>
-       </div> */}
+       </div>
       </div>
     </div>
   )

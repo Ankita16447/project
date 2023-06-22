@@ -2,17 +2,18 @@ import React from 'react'
 import {left_logo} from "../assets/index"
 import {cart_logo} from "../assets/index"
 import {user_logo} from "../assets/index"
-
+import { Link } from "react-router-dom"
 
 const Header = () => 
 {
   return (
-  <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont">
+  <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont sticky top-0 z-50">
 
     <div className="max-w-screen-xl h-full mx-auto flex items-center justify-between">
+            <Link to ="/">
             <div>
                 <img className="w-30 h-12" src={left_logo} alt="logo"/>
-            </div>
+            </div></Link>
             <div className="flex items-center gap-8">
             <ul className="flex items-center gap-8">
                 <li className="text-base text-black hover:text-orange-900 hover:underline
