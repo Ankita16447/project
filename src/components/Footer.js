@@ -45,10 +45,10 @@ const Footer = () => {
         </div>
         
        </div> 
-       <div className="flex flex-col justify-center px-2">
+       {/* <div className="flex flex-col justify-center px-2">
         <input className = "bg-transparent border px-4 py-2 text-sm"  placeholder="email"   type="text"></input> 
         <button className=" text-sm-border text-white border-t-0 hover:bg-gray-900 active:bg-white active:text-black"> Subscribe </button>
-       </div>
+       </div> */}
       </div>
     </div>
   )
