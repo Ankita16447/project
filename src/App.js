@@ -7,11 +7,12 @@ import Header from "./components/Header";
 import Footer from './components/Footer';
 import {createBrowserRouter,Outlet,RouteProvider,RouterProvider,ScrollRestoration} from "react-router-dom";
 import { productsData } from './api/Api';
-
+import Product from './components/Product';
 const Layout=()=>{
   return (
   <div>
-      <Header />
+      <Header />   
+      <ScrollRestoration/>
       <Outlet/>
       <Footer />
     </div>
@@ -30,7 +31,10 @@ const router = createBrowserRouter([
         loader: productsData,
 
       },
-
+       {
+        path:"/product/:id",
+        element:<Product/>
+       },
       {
         path: "/cart",
         element:<Cart />
