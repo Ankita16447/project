@@ -4,6 +4,8 @@ import { useLocation} from "react-router-dom" ;
 import { MdOutlineStar } from 'react-icons/md';
 import { addToCart } from '../redux/bazarSlice';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+
 const Product = () => {
   const dispatch = useDispatch()
     const [details , setDetails] = useState({}) ; 
@@ -65,7 +67,7 @@ setDetails(Location.state.item) ;
                    quantity:baseQty,
                    description:details.description,
         })
-        )
+        ) & toast.success(`${details.title} is added`)
         }
         className = "bg-black text-white py-3 px-6 active:bg-gray-800">
           add to cart
@@ -74,6 +76,17 @@ setDetails(Location.state.item) ;
       <p className = "text-base text-gray-500" > category: <span className = "font-medium capitalize">{details.category}</span></p>
      </div>
       </div>
+      <ToastContainer position="top-left" 
+    autoClose={2000} 
+    hideProgressBar = {false} 
+    newestOnTop = {false}
+    closeOnClick
+    rtl={false} 
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover 
+    theme="dark"
+    />
     </div>
   )
 }
