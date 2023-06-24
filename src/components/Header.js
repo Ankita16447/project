@@ -2,10 +2,13 @@ import React from 'react'
 import {left_logo} from "../assets/index"
 import {cart_logo} from "../assets/index"
 import {user_logo} from "../assets/index"
+import { useSelector } from 'react-redux';
 
 
 const Header = () => 
 {
+    const productData = useSelector((state)=> state.bazar.productData);
+    console.log(productData);
   return (
   <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-800 font-titleFont sticky top-0 z-50">
 
@@ -42,8 +45,11 @@ const Header = () =>
 
             </ul>
 
-            <div>
+            <div className='relative'>
                 <img className="w-10" src={cart_logo}  alt="" />
+                <span className = "absolute w-6 top-1 left-3 text-sm flex items-center justify-center">
+                    {productData.length}
+                </span>
             </div>
 
             <img className ="w-8 h-8 rounded-full" src={user_logo} alt="userlogo" />
