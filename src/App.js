@@ -5,7 +5,7 @@ import Cart from "./pages/Cart";
 import Header from "./components/Header";
 // import Banner from './components/Banner';
 import Footer from './components/Footer';
-import {createBrowserRouter,Outlet,RouteProvider,RouterProvider,ScrollRestoration} from "react-router-dom";
+import {createBrowserRouter,Outlet, RouterProvider,ScrollRestoration} from "react-router-dom";
 import { productsData } from './api/Api';
 import Product from './components/Product';
 const Layout=()=>{
