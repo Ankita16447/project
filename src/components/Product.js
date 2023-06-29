@@ -2,12 +2,13 @@ import React from 'react';
 import {useEffect , useState} from 'react';
 import { useLocation} from "react-router-dom" ; 
 import { MdOutlineStar } from 'react-icons/md';
-import { addToCart } from '../redux/bazarSlice';
-import { useDispatch } from 'react-redux';
-import { ToastContainer, toast } from 'react-toastify';
+import {Link} from "react-router-dom";
+// import { addToCart } from '../redux/bazarSlice';
+// import { useDispatch } from 'react-redux';
+// import { ToastContainer, toast } from 'react-toastify';
 
 const Product = () => {
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
     const [details , setDetails] = useState({}) ; 
 
     let [baseQty, setBaseQty] = useState(1);
@@ -59,7 +60,7 @@ setDetails(Location.state.item) ;
            + </button>
            </div>
         </div>
-        <button onClick={()=> dispatch(addToCart({
+        {/* <button onClick={()=> dispatch(addToCart({
                    _id: details._id,
                    title:details.title,
                    image:details.image,
@@ -68,15 +69,15 @@ setDetails(Location.state.item) ;
                    description:details.description,
         })
         ) & toast.success(`${details.title} is added`)
-        }
-        className = "bg-black text-white py-3 px-6 active:bg-gray-800">
+        }  */}
+         <Link to="/Payment"><button className = "bg-black text-white py-3 px-6 active:bg-gray-800">
           add to cart
-          </button>
+          </button></Link>
       </div> 
       <p className = "text-base text-gray-500" > category: <span className = "font-medium capitalize">{details.category}</span></p>
      </div>
       </div>
-      <ToastContainer position="top-left" 
+      {/* <ToastContainer position="top-left" 
     autoClose={2000} 
     hideProgressBar = {false} 
     newestOnTop = {false}
@@ -86,7 +87,7 @@ setDetails(Location.state.item) ;
     draggable
     pauseOnHover 
     theme="dark"
-    />
+    /> */}
     </div>
   )
 }

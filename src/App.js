@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Cart from "./pages/Cart";
 
 import Header from "./components/Header";
-// import Banner from './components/Banner';
+import Payment from './components/Payment';
 import Footer from './components/Footer';
 import {createBrowserRouter,Outlet, RouterProvider,ScrollRestoration} from "react-router-dom";
 import { productsData } from './api/Api';
@@ -38,6 +38,12 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element:<Cart />
+
+      },
+
+      {
+        path: "/payment",
+        element:<Payment />
 
       },
     ],
