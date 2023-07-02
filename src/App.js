@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from "./pages/Home";
-import Cart from "./pages/Cart";
-
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Shop from "./pages/Shop";
 import Header from "./components/Header";
 import Payment from './components/Payment';
 import Footer from './components/Footer';
@@ -36,14 +37,25 @@ const router = createBrowserRouter([
         element:<Product/>
        },
       {
-        path: "/cart",
-        element:<Cart />
+        path: "/shop",
+        element:<Shop />
+
+      },
+      
+      {
+        path: "/payment",
+        element:<Payment />
 
       },
 
       {
-        path: "/payment",
-        element:<Payment />
+        path: "/contact",
+        element:<Contact />
+
+      },
+      {
+        path: "/about",
+        element:<About />
 
       },
     ],

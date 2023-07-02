@@ -21,28 +21,28 @@ const Header = () =>
             <ul className="flex items-center gap-8">
                 <li className="text-base text-black hover:text-orange-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                    Home
+                    <Link to ="/">Home</Link>
                 </li>
 
                 <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                    Pages
+                    <Link to="/about">About</Link>
                 </li>
 
                 <li className="text-base text-black hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                    Shop
+                    <Link to="/shop">Shop</Link>
                 </li>
 
                 <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                    Elements
+                    <Link to="/contact">Contact</Link>
                 </li>
 
-                <li className="text-base text-black  hover:text-black-900 hover:underline
+                {/* <li className="text-base text-black  hover:text-black-900 hover:underline
                 underline-offset-2 decoration-[1px] cursor-pointer duration-300">
-                    Blog
-                </li>
+                    <Link to="/blog">Blog</Link>
+                </li> */}
 
             </ul>
 
