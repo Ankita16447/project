@@ -1,9 +1,10 @@
 import React from 'react';
 import Home from "./pages/Home";
-import Cart from "./pages/Cart";
-import Login from './pages/Login';
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Shop from "./pages/Shop";
 import Header from "./components/Header";
-// import Banner from './components/Banner';
+import Payment from './components/Payment';
 import Footer from './components/Footer';
 import {createBrowserRouter,Outlet, RouterProvider,ScrollRestoration} from "react-router-dom";
 import { productsData } from './api/Api';
@@ -36,8 +37,25 @@ const router = createBrowserRouter([
         element:<Product/>
        },
       {
-        path: "/cart",
-        element:<Cart />
+        path: "/shop",
+        element:<Shop />
+
+      },
+      
+      {
+        path: "/payment",
+        element:<Payment />
+
+      },
+
+      {
+        path: "/contact",
+        element:<Contact />
+
+      },
+      {
+        path: "/about",
+        element:<About />
 
       },
       {
