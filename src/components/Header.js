@@ -56,7 +56,9 @@ const Header = () =>
             </div>
             </Link>
 
-            <img className ="w-8 h-8 rounded-full" src={user_logo} alt="userlogo" />
+           <Link to="/Login">
+           <img className ="w-8 h-8 rounded-full" src={user_logo} alt="userlogo" />
+           </Link>
             
         </div>     
     </div>

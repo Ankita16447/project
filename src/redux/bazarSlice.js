@@ -11,7 +11,7 @@ export const bazarSlice = createSlice({
     reducers:{
         addToCart:(state,action)=>{
             state.productData = action.payload;
-        }
+        },
     },
 
     deleteItem:(state,action)=> {
@@ -42,7 +42,14 @@ export const bazarSlice = createSlice({
         }
     },
 
+    addUser: (state , action ) =>{
+        state.userInfo = action.payload ; 
+    },
+        removeUser: (state) => {
+            state.userInfo = null ; 
+    } , 
 
-})
-export const { addToCart,deleteItem,resetCart,incrementQuantity,decrementQuantity } = bazarSlice.actions;
+
+});
+export const { addToCart,deleteItem,resetCart,incrementQuantity,decrementQuantity , addUser , removeUser ,  } = bazarSlice.actions;
 export default bazarSlice.reducer;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
-
+import Login from './pages/Login';
 import Header from "./components/Header";
 // import Banner from './components/Banner';
 import Footer from './components/Footer';
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
         element:<Cart />
 
       },
+      {
+        path:"/login",
+        element:<Login/>
+      }
     ],
 
   },
