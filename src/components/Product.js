@@ -71,7 +71,7 @@ setDetails(Location.state.item) ;
         ) & toast.success(`${details.title} is added`)
         }  */}
          <Link to="/Payment"><button className = "bg-black text-white py-3 px-6 active:bg-gray-800">
-          add to cart
+          Pay ${details.price}
           </button></Link>
       </div> 
       <p className = "text-base text-gray-500" > category: <span className = "font-medium capitalize">{details.category}</span></p>
