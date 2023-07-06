@@ -1,0 +1,22 @@
+.top-brands-cover{
+    
+    border-radius: 100% ; 
+    background-color: #f8f8f8; 
+    box-shadow:  rgb(0 0 0 / 8%) 0px 3px 12px ; 
+    border: 0.5px solid rgb(232 , 232, 232);
+}
+.carausel-image{
+    
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    
+}
+.collection-title{
+    font: 180px;
+    color: #141212;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 54px;
+}
+
