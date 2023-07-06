@@ -1,8 +1,6 @@
 import React , {useState} from 'react';
 import visa from '../assets/visa.jpg';
 
-
-
 const Payment = () => {
   const[userData, setUserData] = useState({
     email:"",
@@ -10,6 +8,7 @@ const Payment = () => {
     date:"",
     security_code:"",
     card_name:"",
+    amount:"",
   });
 
   let name, value;
@@ -27,8 +26,8 @@ const Payment = () => {
   const submitData = async (event) =>
   {
     event.preventDefault();
-    const{ email,card_number,date,security_code,card_name} = userData;
-    if(email && card_number && date && security_code && card_name)
+    const{ email,card_number,date,security_code,card_name, amount} = userData;
+    if(email && card_number && date && security_code && card_name && amount)
     {
 
     
@@ -39,7 +38,7 @@ const Payment = () => {
         "Content-Type":"application/json",
       },
       body: JSON.stringify({
-        email,card_number,date,security_code,card_name
+        email,card_number,date,security_code,card_name,amount
       }),
     }
     );
@@ -52,6 +51,7 @@ const Payment = () => {
         date:"",
         security_code:"",
         card_name:"",
+        amount:"",
       });
       alert("Data stored");
     }
@@ -69,12 +69,12 @@ const Payment = () => {
   return (
     <div>
       <div className="container" style={{display:"flex" , flexDirection:"row"}}>
-        <div className="top" style={{width:"49vw",height:"400px"}}>
-            <img src={visa} alt="" />
+        <div className="top" style={{width:"49vw",height:"470px"}}>
+            <img src={visa} alt="" style={{marginTop:"50px"}}/>
         </div>
         <div className="bottom" style={{width:"49vw",height:"400px", marginTop:"10px"}}>
             {/* <h2 style={{color:"white"}}>Order Now</h2> */}
-            <form action=""  method= "POST" style={{backgroundColor:"black", height:"380px"}}>
+            <form action=""  method= "POST" style={{backgroundColor:"black", height:"450px"}}>
             <h2 style={{color:"white", textAlign:"center"}}>Order Now</h2>
                 <input style={{width:"96%", padding:"10px", margin:"10px"}} 
                 type="email" id="" name="email" 
@@ -107,6 +107,13 @@ const Payment = () => {
                 type="text" id="" name="card_name" 
                 placeholder="name on the card" 
                 value={userData.card_name}
+                onChange={postUserData} />
+                <br />
+
+                <input style={{width:"96%", padding:"10px", margin:"10px"}} 
+                type="number" id="" name="amount" 
+                placeholder="Enter the amount" 
+                value={userData.amount}
                 onChange={postUserData} />
                 <br />
 

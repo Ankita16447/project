@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import {createBrowserRouter,Outlet, RouterProvider,ScrollRestoration} from "react-router-dom";
 import { productsData } from './api/Api';
 import Product from './components/Product';
-import Login from './pages/Login';
+import Login2 from './pages/Login2';
 const Layout=()=>{
   return (
   <div>
@@ -60,8 +60,8 @@ const router = createBrowserRouter([
 
       },
       {
-        path:"/login",
-        element:<Login/>
+        path:"/Login2",
+        element:<Login2 />
       }
     ],
 

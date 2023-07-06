@@ -1,17 +1,13 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// import { initializeApp } from "firebase/app";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDB9PaowdMn8ZDKnSprOweBEMGCB3xivwE",
-  authDomain: "fashion-app-c75fe.firebaseapp.com",
-  projectId: "fashion-app-c75fe",
-  storageBucket: "fashion-app-c75fe.appspot.com",
-  messagingSenderId: "428146514768",
-  appId: "1:428146514768:web:03ddb6deeeed6482852a55"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyA32sxM27KVPZiw6BZFdt1KC5yQapVHh3c",
+//   authDomain: "bazarapp-337ec.firebaseapp.com",
+//   projectId: "bazarapp-337ec",
+//   storageBucket: "bazarapp-337ec.appspot.com",
+//   messagingSenderId: "890839756969",
+//   appId: "1:890839756969:web:f34161a9f7196a456bf9b8"
+// };
 
-// Initialize Firebase
-export const app = initializeApp(firebaseConfig);
+// // Initialize Firebase
+// export const app = initializeApp(firebaseConfig);
