@@ -55,7 +55,7 @@ const Login = () => {
        <button  className="bg-black text-white text-base py-3 px-8 tracking-wide rounded-md hover:bg-gray-800 duration-300"> sign out</button>
       </div>
     
-    <ToastContainer 
+     <ToastContainer 
     position = "top-left"
     autoClose ={2000} 
     hideProgressBar = {false} 
