@@ -5,8 +5,8 @@ import PrevArrow from "../components/carousel/prevArrow";
 import Slider from "react-slick";
 import { useState } from "react";
 import Products from "../components/Products";
-import { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
+// import { useEffect } from "react";
+// import { useLoaderData } from "react-router-dom";
 import "./shop.css";
 const shop_items = [
   {
@@ -44,7 +44,7 @@ const Shop = () => {
           return (
             <div>
               <div className="top-brands-cover ">
-                <img src={brand.cover} className="top-brands-image" />
+                <img src={brand.cover} alt="" className="top-brands-image" />
                 <Products products={products} />
               </div>
               
